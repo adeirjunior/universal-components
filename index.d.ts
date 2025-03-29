@@ -1,2 +1,2 @@
 export { TodoItem } from './components/todo-item/index';
-export { Card } from './components/my-card';
+export { MyCard } from './components/my-card';
