@@ -1,7 +1,7 @@
 {
   "name": "universal-wc",
   "private": false,
-  "version": "1.1.0",
+  "version": "1.1.2",
   "main": "dist/universal-wc.umd.js",
   "module": "dist/universal-wc.es.js",
   "types": "dist/index.d.ts",
