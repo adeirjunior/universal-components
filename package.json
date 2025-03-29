@@ -15,6 +15,23 @@
     "dist"
   ],
   "type": "module",
+  "keywords": [
+    "web-components",
+    "custom-elements",
+    "ui",
+    "components"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adeirjunior/universal-wc.git"
+  },
+  "homepage": "https://adeirjunior.github.io/universal-wc",
+  "bugs": {
+    "url": "https://github.com/adeirjunior/universal-wc/issues"
+  },
   "scripts": {
     "build": "tsc && vite build",
     "prepublishOnly": "npm run build",
