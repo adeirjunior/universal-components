@@ -1,4 +1,4 @@
-export declare class Card extends HTMLElement {
+export declare class MyCard extends HTMLElement {
     checkbox: HTMLInputElement | null;
     constructor();
     static get observedAttributes(): string[];
