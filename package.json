@@ -1,10 +1,16 @@
 {
-  "name": "universal-components",
-  "private": true,
+  "name": "universal-wc",
+  "private": false,
   "version": "1.0.0",
-  "main": "dist/universal-components.umd.js",
-  "module": "dist/universal-components.es.js",
-  "types": "dist/universal-components.d.ts",
+  "main": "dist/universal-wc.umd.js",
+  "module": "dist/universal-wc.es.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "author": {
+    "email": "hello@adeir.me",
+    "name": "Adeir Junior",
+    "url": "https://adeir.me"
+  },
   "files": [
     "dist"
   ],

@@ -1,4 +1,4 @@
-# Web Components Library
+# Universal Web Components
 
 This library contains a collection of reusable and framework-agnostic Web Components that can be easily integrated into any web project. No need for complex setups or frameworks. Simply add the code to your projects and start using them.
 
@@ -9,7 +9,7 @@ This library contains a collection of reusable and framework-agnostic Web Compon
 If you are using npm to manage your dependencies, run the following command:
 
 ```bash
-npm install your-library-name
+npm install universal-wc
 ```
 
 ### Include directly in HTML
@@ -17,7 +17,7 @@ npm install your-library-name
 If you prefer not to use npm, you can simply add the JavaScript file directly to your HTML:
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/universal-components/dist/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/universal-wc/dist/universal-wc.es.js"></script>
 ```
 
 ## 🛠️ Using the Components
@@ -95,8 +95,8 @@ If you'd like to contribute to the library, follow these steps:
 2. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/adeirjunior/universal-components.git
-   cd universal-components
+   git clone https://github.com/adeirjunior/universal-wc.git
+   cd universal-wc
    npm install
    ```
 
@@ -113,7 +113,3 @@ All contributions are welcome!
 ## 📄 License
 
 This library is licensed under the **MIT License**. See the [LICENSE](./LICENSE) file for more details.
-
----
-
-Feel free to adapt this README as needed for your project, including more details on how the components work or new sections on how to use the library in different scenarios.

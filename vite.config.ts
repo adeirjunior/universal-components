@@ -5,8 +5,8 @@ export default defineConfig({
     build: {
         lib: {
             entry: 'src/index.ts',
-            name: 'UniversalComponents',
-            fileName: (format) => `universal-components.${format}.js`,
+            name: 'universalWc',
+            fileName: (format) => `universal-wc.${format}.js`,
         },
         rollupOptions: {
             output: {
