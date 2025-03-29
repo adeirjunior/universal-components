@@ -1,7 +1,7 @@
-import { todoItemCSS } from './card.css.ts';
-import { todoItemHtml } from './card.html.ts';
+import { todoItemCSS } from './my-card.css.ts';
+import { todoItemHtml } from './my-card.html.ts';
 
-export class Card extends HTMLElement {
+export class MyCard extends HTMLElement {
   checkbox: HTMLInputElement | null = null;
 
   constructor() {
@@ -42,7 +42,7 @@ export class Card extends HTMLElement {
   }
 }
 
-customElements.define('card', Card);
+customElements.define('my-card', MyCard);
 
 document.addEventListener("DOMContentLoaded", () => {
   const todoItem = document.querySelector("todo-item");
