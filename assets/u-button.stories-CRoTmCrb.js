@@ -1,4 +1,4 @@
-import{x as d}from"./lit-element-B-NARBzP.js";import"./index-DADrbu0j.js";const m={title:"Components/UButton",component:"u-button",argTypes:{variant:{control:"text"},radius:{control:"text"},size:{control:"text"},disabled:{control:"boolean"},"aria-label":{control:"text"}}},u=({variant:o,radius:n,size:s,disabled:l,ariaLabel:i})=>d`
+import{x as d}from"./lit-element-B-NARBzP.js";import"./index-CXokGd1P.js";const m={title:"Components/UButton",component:"u-button",argTypes:{variant:{control:"text"},radius:{control:"text"},size:{control:"text"},disabled:{control:"boolean"},"aria-label":{control:"text"}}},u=({variant:o,radius:n,size:s,disabled:l,ariaLabel:i})=>d`
   <u-button
     variant="${o}"
     radius="${n}"
