@@ -6,9 +6,9 @@
   "module": "dist/universal-wc.es.js",
   "types": "dist/index.d.ts",
   "exports": {
+    "types": "./dist/index.d.ts",
     "import": "./dist/universal-wc.es.js",
-    "require": "./dist/universal-wc.umd.js",
-    "types": "./dist/index.d.ts"
+    "require": "./dist/universal-wc.umd.js"
   },
   "license": "MIT",
   "author": {
@@ -55,6 +55,7 @@
     "storybook": "^8.6.11",
     "typescript": "~5.7.2",
     "vite": "^6.2.0",
-    "vite-plugin-dts": "^4.5.3"
+    "vite-plugin-dts": "^4.5.3",
+    "vite-plugin-static-copy": "^2.3.0"
   }
 }
