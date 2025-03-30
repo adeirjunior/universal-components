@@ -1,7 +1,7 @@
 import { UButtonHTML } from "./u-button.html";
 import { UButtonCSS } from "./u-button.css";
 
-type UButtonProps = React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement> & {
+export type UButtonProps = React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement> & {
   variant?: "default" | "primary" | "secondary";
   radius?: string;
   size?: "sm" | "md" | "lg";

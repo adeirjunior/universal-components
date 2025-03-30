@@ -1,7 +1,7 @@
 import { UCheckboxCSS } from './u-checkbox.css';
 import { UCheckboxHTML } from './u-checkbox.html';
 
-type UCheckboxProps = React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement> & {
+export type UCheckboxProps = React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement> & {
   checked?: boolean;
   indeterminate?: boolean;
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;

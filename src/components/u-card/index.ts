@@ -1,7 +1,7 @@
 import { UCardCSS } from './u-card.css.ts';
 import { UCardHtml } from './u-card.html.ts';
 
-type UCardProps = React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement> & {
+export type UCardProps = React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement> & {
   title?: string;
   content?: string;
 };
@@ -13,9 +13,6 @@ declare global {
     }
   }
 }
-
-export { };
-
 
 export class UCard extends HTMLElement {
 
