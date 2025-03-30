@@ -21,5 +21,3 @@ export class UCard extends HTMLElement {
     return ['checked'];
   }
 }
-
-customElements.define('u-card', UCard);

@@ -51,5 +51,3 @@ export class UButton extends HTMLElement {
     }
   }
 }
-
-customElements.define("u-button", UButton);

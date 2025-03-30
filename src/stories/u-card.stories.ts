@@ -1,5 +1,4 @@
-import "./../components/u-card";
-import "./../components/u-button";
+import "./../index";
 import { html } from "lit";
 
 export default {

@@ -1,5 +1,5 @@
 import { html } from "lit";
-import "./../components/u-button";
+import "./../index";
 
 export default {
   title: "Components/UButton",

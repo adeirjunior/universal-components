@@ -1,4 +1,4 @@
-import "./../components/u-checkbox";
+import "./../index";
 import { html } from "lit";
 
 export default {

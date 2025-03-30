@@ -34,4 +34,3 @@ export class UCheckbox extends HTMLElement {
   }
 }
 
-customElements.define('u-checkbox', UCheckbox);
