@@ -1,7 +1,7 @@
-import { todoItemCSS } from './todo-item.css';
-import { todoItemHtml } from './todo-item.html';
+import { UCheckboxCSS } from './u-checkbox.css';
+import { UCheckboxHTML } from './u-checkbox.html';
 
-export class TodoItem extends HTMLElement {
+export class UCheckbox extends HTMLElement {
   checkbox: HTMLInputElement | null = null;
 
   constructor() {
@@ -9,11 +9,11 @@ export class TodoItem extends HTMLElement {
     const shadow = this.attachShadow({ mode: 'open' });
 
     const style = document.createElement('style');
-    style.textContent = todoItemCSS;
+    style.textContent = UCheckboxCSS;
     shadow.appendChild(style);
 
     const template = document.createElement('template');
-    template.innerHTML = todoItemHtml;
+    template.innerHTML = UCheckboxHTML;
     shadow.appendChild(template.content.cloneNode(true));
 
     this.checkbox = shadow.querySelector('input');
@@ -27,14 +27,6 @@ export class TodoItem extends HTMLElement {
     if (name === 'checked') this.updateChecked(newValue);
   }
 
-  connectedCallback() {
-    console.log("Adicionado")
-  }
-
-  disconnectedCallback() {
-    console.log("Removido")
-  }
-
   updateChecked(value: string | null) {
     if (this.checkbox) {
       this.checkbox.checked = value != null && value !== 'false';
@@ -42,4 +34,4 @@ export class TodoItem extends HTMLElement {
   }
 }
 
-customElements.define('todo-item', TodoItem);
+customElements.define('u-checkbox', UCheckbox);

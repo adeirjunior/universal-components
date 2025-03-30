@@ -2,6 +2,66 @@
 
 This library contains a collection of reusable and framework-agnostic Web Components that can be easily integrated into any web project. No need for complex setups or frameworks. Simply add the code to your projects and start using them.
 
+## ✅ Completed Components
+
+- [x] `u-checkbox` - Customizable checkbox  
+- [x] `u-button` - Button with support for variants, sizes, and accessibility  
+- [x] `u-card` - Card component with header, body, and footer  
+
+## 🛠️ To-Do Components  
+
+### 🟢 Buttons & Inputs
+
+- [ ] `u-icon-button` - Compact button with an icon only  
+- [ ] `u-toggle-button` - Toggle button (on/off)  
+- [ ] `u-switch` - Styled switch  
+- [ ] `u-radio` - Radio button  
+- [ ] `u-input` - Text input field  
+- [ ] `u-textarea` - Multiline text input  
+- [ ] `u-select` - Dropdown select field  
+- [ ] `u-slider` - Range slider  
+- [ ] `u-file-upload` - File upload input  
+
+### 🏗️ Structure & Layout
+
+- [ ] `u-container` - Responsive layout container  
+- [ ] `u-grid` - Flexible grid system  
+- [ ] `u-row` & `u-column` - Row and column-based layout  
+- [ ] `u-divider` - Visual separator line  
+- [ ] `u-stack` - Spacing management component  
+- [ ] `u-dialog` - Modal/Dialog box  
+
+### 🖼️ Display & Feedback
+
+- [ ] `u-avatar` - User profile avatar  
+- [ ] `u-badge` - Small visual indicator (e.g., notifications)  
+- [ ] `u-tooltip` - Tooltip for additional info on hover  
+- [ ] `u-progress` - Progress bar  
+- [ ] `u-spinner` - Loading indicator  
+- [ ] `u-toast` - Floating notifications  
+
+### 📋 Lists & Tables
+
+- [ ] `u-list` - Standard list  
+- [ ] `u-list-item` - List item with icon and actions  
+- [ ] `u-table` - Customizable table  
+- [ ] `u-pagination` - Pagination component  
+
+### 🧭 Navigation
+
+- [ ] `u-tabs` - Tabbed navigation  
+- [ ] `u-navbar` - Navigation bar  
+- [ ] `u-sidebar` - Side menu  
+- [ ] `u-breadcrumbs` - Breadcrumb navigation  
+- [ ] `u-accordion` - Expandable/collapsible section  
+
+### 📑 Miscellaneous
+
+- [ ] `u-icon` - Customizable icons  
+- [ ] `u-carousel` - Image/content slider  
+- [ ] `u-collapse` - Collapsible section  
+- [ ] `u-alert` - Alert box  
+
 ## 🚀 Installation
 
 ### Install via npm
@@ -24,46 +84,21 @@ If you prefer not to use npm, you can simply add the JavaScript file directly to
 
 Once installed, you can start using the components directly in your HTML code.
 
-### Example usage of `todo-item`
+### Example usage of `u-card`
 
 ```html
-<todo-item checked="true">
-  <span>Buy milk</span>
-  <span slot="description">Task description</span>
-  <span slot="age">Today</span>
-</todo-item>
+<u-card>
+  <div slot="top">Title</div>
+  <p>Lorem Ipsum</p>
+  <span slot="bottom">
+      <u-button>Button Text</u-button>
+  </span>
+</u-card>
 ```
-
-### Available Attributes
-
-#### `checked` (Boolean)
-
-Defines the state of the checkbox (`true` or `false`).
 
 ### Customization via CSS
 
 The library uses **Shadow DOM**, so you can style the components within the component's scope directly. If you need further customization, you can use global styles or **CSS Variables**.
-
-## 📦 Available Components
-
-The library currently contains the following components:
-
-### `todo-item`
-
-A task list item with a checkbox, using slots for dynamic content insertion.
-
-- **Attributes:**
-  - `checked`: Defines whether the item is checked or not.
-
-### Example usage
-
-```html
-<todo-item checked="true">
-  <span>Task to be done</span>
-  <span slot="description">Task description</span>
-  <span slot="age">Today</span>
-</todo-item>
-```
 
 ## ⚙️ Development
 

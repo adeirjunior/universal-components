@@ -1,5 +1,7 @@
-import './components/my-card';
-import './components/todo-item';
+import './components/u-card';
+import './components/u-button';
+import './components/u-checkbox';
 
-export { TodoItem } from './components/todo-item/index';
-export { MyCard } from './components/my-card';
+export { UCard } from './components/u-card';
+export { UButton } from './components/u-button';
+export { UCheckbox } from './components/u-checkbox';
