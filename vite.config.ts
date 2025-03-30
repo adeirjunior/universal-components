@@ -26,13 +26,7 @@ export default defineConfig({
       include: ['./src'],
       exclude: ['./src/stories/**/*'],
       outDir: './dist',
-      insertTypesEntry: true,
-      beforeWriteFile: (filePath, content) => {
-        if (filePath.endsWith('index.d.ts')) {
-          content = `import './global.d.ts';\n${content}`;
-        }
-        return { filePath, content };
-      }
+      insertTypesEntry: true
     }),
     viteStaticCopy({
       targets: [
