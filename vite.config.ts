@@ -10,6 +10,7 @@ export default defineConfig({
     },
     rollupOptions: {
       input: "src/index.ts",
+      external: [],
       output: {
         globals: {},
       },
@@ -17,6 +18,7 @@ export default defineConfig({
     outDir: "dist",
   },
   plugins: [dts({
-    exclude: ['src/stories/**/*']
+    exclude: ['src/stories/**/*'],
+    insertTypesEntry: true
   })],
 });
