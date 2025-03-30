@@ -13,30 +13,34 @@ export default defineConfig({
       input: "src/index.ts",
       external: [],
       output: {
+        dir: 'dist',
+        format: 'es',
+        chunkFileNames: 'chunks/[name]-[hash].js',
         globals: {},
       },
     },
     outDir: "dist"
   },
-  plugins: [dts({
-    include: ['./src'],
-    exclude: ['./src/stories/**/*'],
-    outDir: './dist/types',
-    insertTypesEntry: true,
-    beforeWriteFile: (filePath, content) => {
-      if (filePath.endsWith('index.d.ts')) {
-        content = `import './global.d.ts';\n${content}`;
+  plugins: [
+    dts({
+      include: ['./src'],
+      exclude: ['./src/stories/**/*'],
+      outDir: './dist',
+      insertTypesEntry: true,
+      beforeWriteFile: (filePath, content) => {
+        if (filePath.endsWith('index.d.ts')) {
+          content = `import './global.d.ts';\n${content}`;
+        }
+        return { filePath, content };
       }
-      return { filePath, content };
-    }
-  }),
-  viteStaticCopy({
-    targets: [
-      {
-        src: './src/global.d.ts',
-        dest: './types'
-      },
-    ],
-  }),
+    }),
+    viteStaticCopy({
+      targets: [
+        {
+          src: './src/global.d.ts',
+          dest: './'
+        },
+      ],
+    }),
   ],
 });
