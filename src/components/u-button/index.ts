@@ -1,6 +1,23 @@
 import { UButtonHTML } from "./u-button.html";
 import { UButtonCSS } from "./u-button.css";
 
+type UButtonProps = React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement> & {
+  variant?: "default" | "primary" | "secondary";
+  radius?: string;
+  size?: "sm" | "md" | "lg";
+  disabled?: boolean;
+  onClick?: React.MouseEventHandler<HTMLButtonElement>;
+};
+
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      "u-button": UButtonProps;
+    }
+  }
+}
+
+
 export class UButton extends HTMLElement {
   shadow: ShadowRoot;
   buttonElement: HTMLButtonElement | null;

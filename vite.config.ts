@@ -1,6 +1,5 @@
 import { defineConfig } from "vite";
 import dts from "vite-plugin-dts";
-import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 export default defineConfig({
   build: {
@@ -27,14 +26,6 @@ export default defineConfig({
       exclude: ['./src/stories/**/*'],
       outDir: './dist',
       insertTypesEntry: true
-    }),
-    viteStaticCopy({
-      targets: [
-        {
-          src: './src/global.d.ts',
-          dest: './'
-        },
-      ],
-    }),
+    })
   ],
 });

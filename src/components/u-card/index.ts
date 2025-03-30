@@ -1,6 +1,22 @@
 import { UCardCSS } from './u-card.css.ts';
 import { UCardHtml } from './u-card.html.ts';
 
+type UCardProps = React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement> & {
+  title?: string;
+  content?: string;
+};
+
+declare global {
+  namespace JSX {
+    interface IntrinsicElements {
+      "u-card": UCardProps;
+    }
+  }
+}
+
+export { };
+
+
 export class UCard extends HTMLElement {
 
   constructor() {
