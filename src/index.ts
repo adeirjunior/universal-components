@@ -1,12 +1,15 @@
-import { UCard } from './components/u-card';
+import { UCard, UCardActions, UCardBody, UCardHeader } from './components/u-card';
 import { UButton } from './components/u-button';
 import { UCheckbox } from './components/u-checkbox';
 
 customElements.define("u-button", UButton);
 customElements.define('u-card', UCard);
+customElements.define('u-card-actions', UCardActions);
+customElements.define('u-card-body', UCardBody);
+customElements.define('u-card-header', UCardHeader);
 customElements.define('u-checkbox', UCheckbox);
 
-export { UCard } from './components/u-card';
+export { UCard, UCardActions, UCardBody, UCardHeader } from './components/u-card';
 export type { UCardProps } from './components/u-card';
 export { UButton } from './components/u-button';
 export type { UButtonProps } from './components/u-button';

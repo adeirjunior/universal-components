@@ -1,5 +1,8 @@
 import { UCardCSS } from './u-card.css.ts';
 import { UCardHtml } from './u-card.html.ts';
+export { UCardActions} from './u-card-actions/index.ts';
+export { UCardBody } from './u-card-body/index.ts';
+export { UCardHeader } from './u-card-header/index.ts';
 
 export type UCardProps = React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement> & {
   title?: string;

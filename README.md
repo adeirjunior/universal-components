@@ -7,6 +7,11 @@ This library contains a collection of reusable and framework-agnostic Web Compon
 - [x] `u-checkbox` - Customizable checkbox  
 - [x] `u-button` - Button with support for variants, sizes, and accessibility  
 - [x] `u-card` - Card component with header, body, and footer  
+- [x] `u-input` - Text input field  
+- [x] `u-select` - Dropdown select field  
+- [x] `u-radio` - Radio button  
+- [x] `u-textarea` - Multiline text input  
+- [x] `u-file-upload` - File upload input  
 
 ## 🛠️ To-Do Components  
 
@@ -15,12 +20,7 @@ This library contains a collection of reusable and framework-agnostic Web Compon
 - [ ] `u-icon-button` - Compact button with an icon only  
 - [ ] `u-toggle-button` - Toggle button (on/off)  
 - [ ] `u-switch` - Styled switch  
-- [ ] `u-radio` - Radio button  
-- [ ] `u-input` - Text input field  
-- [ ] `u-textarea` - Multiline text input  
-- [ ] `u-select` - Dropdown select field  
 - [ ] `u-slider` - Range slider  
-- [ ] `u-file-upload` - File upload input  
 
 ### 🏗️ Structure & Layout
 

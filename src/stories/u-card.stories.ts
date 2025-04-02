@@ -8,8 +8,8 @@ export default {
 
 const Template = () => html`
   <u-card>
-    <div slot="top">Title</div>
-    <div slot="body">
+    <u-card-header>Title</u-card-header>
+    <u-card-body>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer rutrum
         condimentum metus, eu feugiat odio porttitor ut. Nam vitae dignissim
@@ -30,10 +30,10 @@ const Template = () => html`
         eget ultrices orci nisl sit amet libero. Nullam a aliquam risus, sit
         amet congue dui. Quisque efficitur eleifend ante et pretium.
       </p>
-    </div>
-    <div slot="bottom">
+    </u-card-body>
+    <u-card-actions>
       <u-button>Button Text</u-button>
-    </div>
+    </u-card-actions>
   </u-card>
 `;
 

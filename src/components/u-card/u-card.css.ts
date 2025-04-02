@@ -15,22 +15,4 @@ export const UCardCSS = /*css*/ `
         padding: 1em 2em;
     }
 
-    ::slotted([slot="top"]) {
-        display: flex;
-        gap: 1em;
-        font-size: 2rem;
-    }
-
-    ::slotted([slot="body"]) {
-        padding: 1em 0;
-        color: #333;
-    }
-
-    ::slotted([slot="bottom"]) {
-        display: flex;
-        gap: 0.5em;
-        justify-content: center;
-        border-top: 1px solid #ddd;
-        padding-top: 0.5em;
-    }
 `;
