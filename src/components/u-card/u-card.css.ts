@@ -6,7 +6,6 @@ export const UCardCSS = /*css*/ `
         overflow: hidden;
         background-color: #ffffff;
         font-family: Arial, sans-serif;
-        max-width: 400px;
     }
 
     section {

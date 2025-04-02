@@ -2,11 +2,11 @@ import "./../index";
 import { html } from "lit";
 
 export default {
-  title: "Components/UCheckbox",
-  component: "u-checkbox",
-  argTypes: {
-    checked: { control: 'boolean' },
-},
+    title: "Components/UCheckbox",
+    component: "u-checkbox",
+    argTypes: {
+        checked: { control: 'boolean' },
+    },
 };
 
 const Template = ({ checked }: { checked: boolean }) => html`

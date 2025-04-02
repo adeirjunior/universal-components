@@ -4,19 +4,6 @@ export { UCardActions} from './u-card-actions/index.ts';
 export { UCardBody } from './u-card-body/index.ts';
 export { UCardHeader } from './u-card-header/index.ts';
 
-export type UCardProps = React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement> & {
-  title?: string;
-  content?: string;
-};
-
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      "u-card": UCardProps;
-    }
-  }
-}
-
 export class UCard extends HTMLElement {
 
   constructor() {
@@ -31,9 +18,8 @@ export class UCard extends HTMLElement {
     template.innerHTML = UCardHtml;
     shadow.appendChild(template.content.cloneNode(true));
 
-  }
-
-  static get observedAttributes() {
-    return ['checked'];
+    const section = shadow.querySelector('section')!;
+    section.className = this.className;
+    section.style.cssText = this.style.cssText;
   }
 }
